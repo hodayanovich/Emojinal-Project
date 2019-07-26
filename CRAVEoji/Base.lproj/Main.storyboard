@@ -120,6 +120,20 @@
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSS-Es-9Un"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-bR-U8t">
+                                <rect key="frame" x="251" y="674" width="143" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="RnU-GZ-lyh"/>
+                                    <constraint firstAttribute="height" constant="42" id="qPd-Pd-AaV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Recipes Here!">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w8N-nZ-y7X" kind="show" identifier="main recipe segue" id="Juc-GB-hnJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75686274509803919" green="1" blue="0.87058823529411766" alpha="0.72693707191780821" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -127,12 +141,14 @@
                             <constraint firstItem="kik-e8-lSi" firstAttribute="top" secondItem="4oI-2L-Hrb" secondAttribute="bottom" constant="25" id="0QR-1F-48f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C9J-9i-Upb" secondAttribute="trailing" constant="91" id="13B-Xu-anm"/>
                             <constraint firstItem="DHR-iZ-0yV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="40w-CL-bmi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zrU-bR-U8t" secondAttribute="trailing" constant="20" id="7cY-d6-zh9"/>
                             <constraint firstItem="C9J-9i-Upb" firstAttribute="top" secondItem="kik-e8-lSi" secondAttribute="bottom" constant="23" id="9i2-VS-zkG"/>
                             <constraint firstItem="4oI-2L-Hrb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="BY5-O4-tiB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="92l-jL-bxX" secondAttribute="trailing" constant="91" id="CLC-PI-6Ki"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kik-e8-lSi" secondAttribute="trailing" constant="91" id="DfO-5i-4RI"/>
                             <constraint firstItem="4oI-2L-Hrb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="GBR-Gf-y5s"/>
                             <constraint firstItem="Vf1-7U-V9V" firstAttribute="top" secondItem="4oI-2L-Hrb" secondAttribute="bottom" constant="25" id="H2x-1K-bVV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zrU-bR-U8t" secondAttribute="bottom" constant="20" id="IYF-Vp-3Lo"/>
                             <constraint firstItem="DHR-iZ-0yV" firstAttribute="top" secondItem="Vf1-7U-V9V" secondAttribute="bottom" constant="23" id="JpF-3j-LMP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4oI-2L-Hrb" secondAttribute="trailing" constant="123" id="Jsd-G1-C4i"/>
                             <constraint firstItem="C9J-9i-Upb" firstAttribute="leading" secondItem="DHR-iZ-0yV" secondAttribute="trailing" constant="60" id="KA8-BJ-2CV"/>
@@ -140,6 +156,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C9J-9i-Upb" secondAttribute="trailing" constant="91" id="Ra2-2W-ycF"/>
                             <constraint firstItem="kik-e8-lSi" firstAttribute="leading" secondItem="Vf1-7U-V9V" secondAttribute="trailing" constant="60" id="TFc-si-2Xi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SgD-rG-ywq" secondAttribute="trailing" constant="91" id="UfV-mk-dHp"/>
+                            <constraint firstItem="zrU-bR-U8t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="251" id="Uh4-P6-ojE"/>
                             <constraint firstItem="SgD-rG-ywq" firstAttribute="top" secondItem="C9J-9i-Upb" secondAttribute="bottom" constant="30" id="bma-jV-Swy"/>
                             <constraint firstItem="0HX-n3-kSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="cJe-RU-gib"/>
                             <constraint firstItem="0HX-n3-kSG" firstAttribute="top" secondItem="DHR-iZ-0yV" secondAttribute="bottom" constant="30" id="gRF-Hk-CN7"/>
@@ -147,12 +164,59 @@
                             <constraint firstItem="lWA-Bm-kRB" firstAttribute="top" secondItem="0HX-n3-kSG" secondAttribute="bottom" constant="18" id="uHL-K8-6jB"/>
                             <constraint firstItem="92l-jL-bxX" firstAttribute="top" secondItem="SgD-rG-ywq" secondAttribute="bottom" constant="18" id="udi-uL-G95"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lWA-Bm-kRB" secondAttribute="bottom" constant="101" id="wCN-dx-iVj"/>
+                            <constraint firstItem="zrU-bR-U8t" firstAttribute="top" secondItem="92l-jL-bxX" secondAttribute="bottom" constant="39" id="wfA-pE-QJ2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="w8N-nZ-y7X" kind="show" identifier="vc2" id="zAK-P0-SD8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="663.768115942029" y="24.456521739130437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dDA-O4-RTv">
+            <objects>
+                <viewController id="w8N-nZ-y7X" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfa-uC-LtI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All the Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-Fn-EaT">
+                                <rect key="frame" x="60" y="95" width="300" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="They will all be here shortly!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh6-un-xhr">
+                                <rect key="frame" x="60" y="142" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BA-8z-FNJ">
+                                <rect key="frame" x="136" y="634" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Cravings"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="m8n-c3-lxn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75686274509803919" green="1" blue="0.87058823529411766" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="w5c-dE-g2a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nq7-Hr-rA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.9710144927537" y="23.64130434782609"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Juc-GB-hnJ"/>
+    </inferredMetricsTieBreakers>
 </document>
