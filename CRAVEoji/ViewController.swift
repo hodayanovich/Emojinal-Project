@@ -32,7 +32,9 @@ class ViewController: UIViewController {
     ]
     @IBAction func showMessage(sender: UIButton) {
         let selectedEmotion = sender.titleLabel?.text
-        let emojiMessage = emojiDictionary[emoji[selectedEmotion!]!]?[0]
+        //let randomEmojiDictionary = emojiDictionary.randomElement()
+        let number = Int.random(in: 0 ... 3)
+        let emojiMessage = emojiDictionary[emoji[selectedEmotion!]!]?[number]
         let alertController = UIAlertController(title: "CRAVE", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
